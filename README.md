@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mediocre: A Next.js-based Blogging Platform
 
-## Getting Started
+![mediocre-high-resolution-logo-transparent](https://github.com/syarwinaaa09/Mediocre/assets/114587158/08e0040e-adf6-44cf-80a2-9ce153a215eb)
 
-First, run the development server:
+Welcome to Mediocre, a modern and feature-rich blogging platform built on Next.js, TypeScript, Sanity CMS, React, Tailwind CSS, and Incremental Static Regeneration (ISR). With the goal of creating the next generation of Medium, we strive to provide a seamless and enjoyable writing and reading experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Features
+* **Next.js**: Utilizing the power of Next.js for a fast and efficient web experience.
+* **TypeScript**: Enhancing the codebase with static typing for improved developer productivity.
+* **Sanity CMS**: A robust headless CMS for managing and organizing content effortlessly.
+* **React**: Building responsive and interactive user interfaces.
+* **Tailwind CSS**: Styling with a utility-first approach, making it easy to customize and maintain.
+* **Incremental Static Regeneration (ISR)**: Ensuring optimal performance and content delivery.
+
+### Getting Started
+To get started with Mediocre, follow these steps:
+
+1. Clone the repository:
+```
+git clone https://github.com/syarwinaaa09/Mediocre.git
+cd mediocre
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```
+npm install
+```
+3. Set up your Sanity CMS project and configure the necessary environment variables. Refer to Configuration for more details.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Run the development server:
+```
+npm run dev
+```
+5. Open `http://localhost:3000` in your browser to access Mediocre.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Folder Structure
+The project structure is organized as follows:
 
-## Learn More
+* `components`: React components used throughout the application.
+* `pages`: Next.js pages for routing.
+* `public`: Static assets (images, stylesheets, etc.).
+* `styles`: Stylesheets, including Tailwind CSS configuration.
+* `utils`: Utility functions and helper files.
 
-To learn more about Next.js, take a look at the following resources:
+### Configuration
+Configuration for Mediocre is managed through environment variables. Create a `.env.local` file in the root directory and add the following variables:
+```
+SANITY_PROJECT_ID=your-sanity-project-id
+SANITY_DATASET=your-sanity-dataset
+```
+Replace `your-sanity-project-id` and `your-sanity-dataset` with your actual Sanity CMS project ID and dataset name.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Development
+During development, you can make use of hot-reloading by running:
+```
+npm run dev
+```
+This will start the development server, and you can view your changes in real-time.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Production
+For a production build, use:
+```
+npm run build
+npm start
+```
+This will build the application for production and start the server.
 
-## Deploy on Vercel
+### Contributing
+Contributions are welcome! If you have any ideas, enhancements, or bug fixes, feel free to open an issue or submit a pull request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### License
+This project is licensed under the MIT License. Feel free to use and modify the code for your own projects.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Happy coding! 🚀
+
+### Credits
+Syarwina Ridwan
